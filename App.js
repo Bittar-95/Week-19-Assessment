@@ -23,12 +23,12 @@ export default class App extends Component {
   }
 
   // Q2: we have 6 errors here please fix them [6 pt]
-  addTodoItem = newTask => {
+  addTodoItem = () => {
     axios
-      .get('getTasks')
+      .post('http://localhost:9000/addNewTask')
       .then(res => {
-        const result = res;
-        this.state.tasks = result;
+        const result = res.data;
+        this.setState({ tasks: result });
       })
       .catch(error => {
         console.log(error);

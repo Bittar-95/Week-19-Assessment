@@ -7,12 +7,14 @@ var result="My name is: " + name + "and my age is: " + age
 */
 // 1) WRITE YOUR CODE UNDER THIS LINE
 
+const name = "Alex";
+const age = 25;
+const result = `My name is: ${name} and my age is: ${age}`;
 
 
 
 
-
-/* 
+/*
 2)
 var food="Fried Chicken"
 var color="Blue"
@@ -25,3 +27,12 @@ var object={
 }
  */
 // 2) WRITE YOUR CODE UNDER THIS LINE
+const food = "Fried Chicken"
+const color = "Blue"
+const object = {
+  food,
+  color,
+  multi: (a, b) => {
+    return a * b
+  }
+}
